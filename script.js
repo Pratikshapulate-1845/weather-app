@@ -9,7 +9,7 @@ async function getWeather() {
     const response = await fetch(url);
     const data = await response.json();
 
-    console.log(data); // 👈 IMPORTANT
+    console.log(data); 
 
     if (data.cod !== 200) {
       document.getElementById("weather").innerHTML = data.message;
